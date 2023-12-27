@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <br><br>
+
+    <div class="container bg-white shadow-md p-5 form-layout">
+        <div class="text-center">
+
+            <i class="fa fa-lock fa-4x" aria-hidden="true"></i>
+
+            <br><br>
+
+            <h4 class="text-uppercase"> Account Locked </h4>
+
+            <br>
+
+            <p> You have been locked out of your account due to multiple failed Login attempts </p>
+
+            <p> You may re-attempt to login to your account after the expiry period. </p>
+
+            <br>
+
+            <a class="btn btn-info" type="button"  href="{% url '' %}"> <i class="fa fa-user" aria-hidden="true"></i> &nbsp; Return to Homepage </a>
+        </div>
+    </div>
+
+
+
+
+
+
+{% endblock %}
